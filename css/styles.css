@@ -1,0 +1,173 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Kumbh Sans", sans-serif;
+  height: 100vh;
+  background: no-repeat linear-gradient(hsl(273, 75%, 66%), hsl(240, 73%, 65%));
+  font-size: 14px;
+}
+
+h1 {
+  text-align: center;
+  font-weight: 700;
+  color: hsl(237, 12%, 33%);
+  letter-spacing: 0.5px;
+  padding-top: 115px;
+  padding-bottom: 20px;
+}
+
+h2 {
+  font-size: 14px;
+  font-weight: initial;
+}
+
+.card {
+  width: 80%;
+  max-width: 300px;
+  margin: 150px auto;
+  margin-bottom: 50px;
+  background: no-repeat top url(/images/bg-pattern-mobile.svg) white;
+  color: hsl(240, 6%, 50%);
+  border: 1px solid white;
+  border-radius: 20px;
+}
+
+.question:hover,
+.question:active {
+  cursor: pointer;
+}
+
+.item {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: center;
+}
+
+.answerGroup {
+  border-bottom: 1px solid hsl(240, 5%, 91%);
+  margin-top: 15px;
+  padding-top: 10px;
+}
+.answer {
+  display: grid;
+  padding-bottom: 15px;
+}
+
+.imageContainer {
+  position: relative;
+}
+
+.womanImg {
+  left: 0;
+  right: 0;
+  top: -100px;
+  margin-left: auto;
+  margin-right: auto;
+  position: absolute;
+  max-width: 225px;
+}
+
+.boxImg {
+  display: none;
+}
+
+.qAndA {
+  gap: 20px;
+  padding-left: 30px;
+  padding-right: 30px;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 50px;
+}
+
+.hidden {
+  display: none;
+}
+
+.attribution {
+  color: white;
+  opacity: 50%;
+}
+
+.attribution a:link {
+  color: white;
+}
+
+.up {
+  transform: rotate(180deg);
+}
+
+@media (min-width: 1280px) {
+  .body {
+    font-size: 16px;
+    transform: scale(0);
+  }
+
+  .card {
+    max-width: 1000px;
+    background: no-repeat url("/images/bg-pattern-desktop.svg"), white;
+    background-size: 1000px, 900px;
+    background-position: bottom -130px left -570px;
+    padding-bottom: 30px;
+    border: 0.05px;
+    position: relative;
+    padding-top: 0;
+    margin-top: 180px;
+  }
+
+  h1 {
+    align-items: left;
+    padding-left: 75px;
+    font-size: 38px;
+    margin-top: 0;
+    padding-top: 70px;
+  }
+
+  h2 {
+    font-size: 17px;
+  }
+  .item {
+    align-items: center;
+    padding-left: 50%;
+  }
+
+  .answerGroup {
+    border-image: linear-gradient(to left, hsl(240, 5%, 91%) 50%, white 50%)
+      100% 1;
+    padding-left: 50%;
+    padding-right: 20px;
+  }
+
+  hr {
+    width: 50%;
+    margin-left: 50%;
+  }
+
+  .imageContainer {
+    width: 400px;
+    height: 430px;
+    background-color: red;
+    background: no-repeat url("/images/illustration-woman-online-desktop.svg");
+    background-position: right 20px;
+    position: absolute;
+    top: 90px;
+    left: 0px;
+    padding-right: 150px;
+  }
+
+  .womanImg {
+    display: none;
+  }
+
+  .boxImg {
+    display: block;
+    position: absolute;
+    top: 252px;
+    left: -100px;
+    z-index: 10;
+  }
+}
