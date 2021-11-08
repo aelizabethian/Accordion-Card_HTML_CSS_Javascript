@@ -1,6 +1,5 @@
 "use strict";
-
-const questions = document.querySelectorAll(".question");
+const questions = document.querySelectorAll(".item");
 const arrows = document.querySelectorAll(".arrow");
 const answers = document.querySelectorAll(".answer");
 
