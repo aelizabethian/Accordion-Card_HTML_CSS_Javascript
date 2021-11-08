@@ -158,7 +158,11 @@ h2 {
     border: 2px solid hsl(240, 5%, 91%) 50%;
     margin-left: 50%;
     margin-right: 8%;
-    font-size: 14px;
+  }
+
+  .answer {
+    font-size: 16px;
+    line-height: 1.5;
   }
 
   .imageContainer {
