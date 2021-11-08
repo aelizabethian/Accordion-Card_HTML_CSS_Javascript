@@ -31,7 +31,7 @@ h2 {
   max-width: 325px;
   margin: 150px auto;
   margin-bottom: 50px;
-  background: no-repeat top url(/images/bg-pattern-mobile.svg) white;
+  background: no-repeat top url("/images/bg-pattern-mobile.svg") white;
   color: hsl(240, 6%, 50%);
   border: 1px solid white;
   border-radius: 20px;
@@ -112,7 +112,7 @@ h2 {
 
   .card {
     max-width: 1000px;
-    background: no-repeat url("/images/bg-pattern-desktop.svg"), white;
+    background: no-repeat url("../images/bg-pattern-desktop.svg"), white;
     background-size: 1000px, 900px;
     background-position: bottom -130px left -570px;
     padding-bottom: 30px;
@@ -151,7 +151,7 @@ h2 {
     width: 400px;
     height: 430px;
     background-color: red;
-    background: no-repeat url("/images/illustration-woman-online-desktop.svg");
+    background: no-repeat url("../images/illustration-woman-online-desktop.svg");
     background-position: right 20px;
     position: absolute;
     top: 80px;
