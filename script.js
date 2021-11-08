@@ -1,42 +1,26 @@
 "use strict";
-const questions = document.querySelectorAll(".item");
-const arrows = document.querySelectorAll(".arrow");
-const answers = document.querySelectorAll(".answer");
+const questions = document.querySelectorAll(".question");
 
 questions.forEach((question) => {
   question.addEventListener("click", (event) => {
     const target = event.target;
-    const closestArrow = event.target.nextElementSibling;
-    function toggleA() {
-      closestArrow.classList.toggle("up");
-      if (closestArrow.classList.contains("up")) {
-        target.style.fontWeight = "bold";
-        target.style.color = "hsl(238, 29%, 16%)";
-      } else {
+    const relatedAnswerDiv = event.target.parentNode.nextElementSibling;
+    const relatedAnswer = relatedAnswerDiv.querySelector(".answer");
+
+    //Here I'm telling Javascript to look in the classList and match up the 2nd class in the array of classes
+    if (target.classList[1] === relatedAnswer.classList[1]) {
+      relatedAnswer.classList.toggle("hidden");
+      console.log(relatedAnswer);
+      if (relatedAnswer.classList[2] === "hidden") {
         target.style.fontWeight = "normal";
         target.style.color = "hsl(237, 12%, 33%)";
+        //added a CSS style to the ::after pseudo-element so that it flips up and down;
+        target.classList.remove("special");
+      } else {
+        target.style.fontWeight = "bold";
+        target.style.color = "hsl(238, 29%, 16%)";
+        target.classList.add("special");
       }
-    }
-
-    if (target.className === "question q0" || target.className === "arrow q0") {
-      document.querySelector(".answer.q0").classList.toggle("hidden");
-      toggleA();
-    }
-    if (target.className === "question q1" || target.className === "arrow q1") {
-      document.querySelector(".answer.q1").classList.toggle("hidden");
-      toggleA();
-    }
-    if (target.className === "question q2" || target.className === "arrow q2") {
-      document.querySelector(".answer.q2").classList.toggle("hidden");
-      toggleA();
-    }
-    if (target.className === "question q3" || target.className === "arrow q3") {
-      document.querySelector(".answer.q3").classList.toggle("hidden");
-      toggleA();
-    }
-    if (target.className === "question q4" || target.className === "arrow q4") {
-      document.querySelector(".answer.q4").classList.toggle("hidden");
-      toggleA();
     }
   });
 });
