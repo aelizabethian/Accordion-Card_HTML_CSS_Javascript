@@ -53,7 +53,7 @@ h2 {
 }
 
 .question::after {
-  content: url("../images/icon-arrow-down.svg");
+  content: url("/icon-arrow-down.svg");
 
   position: absolute;
   top: 0px;
@@ -61,7 +61,7 @@ h2 {
 }
 
 .question.special::after {
-  content: url("../images/icon-arrow-down.svg");
+  content: url("/icon-arrow-down.svg");
 
   position: absolute;
   top: 0px;
