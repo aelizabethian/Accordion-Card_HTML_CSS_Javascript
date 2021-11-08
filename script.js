@@ -18,23 +18,23 @@ questions.forEach((question) => {
       }
     }
 
-    if (target.className === "question q0") {
+    if (target.className === "question q0" || target.className === "arrow q0") {
       document.querySelector(".answer.q0").classList.toggle("hidden");
       toggleA();
     }
-    if (target.className === "question q1") {
+    if (target.className === "question q1" || target.className === "arrow q1") {
       document.querySelector(".answer.q1").classList.toggle("hidden");
       toggleA();
     }
-    if (target.className === "question q2") {
+    if (target.className === "question q2" || target.className === "arrow q2") {
       document.querySelector(".answer.q2").classList.toggle("hidden");
       toggleA();
     }
-    if (target.className === "question q3") {
+    if (target.className === "question q3" || target.className === "arrow q3") {
       document.querySelector(".answer.q3").classList.toggle("hidden");
       toggleA();
     }
-    if (target.className === "question q4") {
+    if (target.className === "question q4" || target.className === "arrow q4") {
       document.querySelector(".answer.q4").classList.toggle("hidden");
       toggleA();
     }
