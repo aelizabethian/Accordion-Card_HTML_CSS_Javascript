@@ -14,20 +14,21 @@ body {
 h1 {
   text-align: center;
   font-weight: 700;
-  color: hsl(237, 12%, 33%);
+  color: hsl(238, 29%, 16%);
   letter-spacing: 0.5px;
   padding-top: 115px;
   padding-bottom: 20px;
 }
 
 h2 {
-  font-size: 14px;
+  font-size: 13px;
   font-weight: initial;
+  padding-right: 10px;
 }
 
 .card {
-  width: 80%;
-  max-width: 300px;
+  width: 90%;
+  max-width: 325px;
   margin: 150px auto;
   margin-bottom: 50px;
   background: no-repeat top url(/images/bg-pattern-mobile.svg) white;
@@ -49,12 +50,14 @@ h2 {
 
 .answerGroup {
   border-bottom: 1px solid hsl(240, 5%, 91%);
-  margin-top: 15px;
+  margin-top: 10px;
   padding-top: 10px;
 }
 .answer {
   display: grid;
   padding-bottom: 15px;
+  font-size: 12px;
+  line-height: 1.4;
 }
 
 .imageContainer {
@@ -129,22 +132,19 @@ h2 {
 
   h2 {
     font-size: 17px;
+    padding-right: 0;
   }
   .item {
     align-items: center;
     padding-left: 50%;
+    padding-right: 10%;
   }
 
   .answerGroup {
-    border-image: linear-gradient(to left, hsl(240, 5%, 91%) 50%, white 50%)
-      100% 1;
-    padding-left: 50%;
-    padding-right: 20px;
-  }
-
-  hr {
-    width: 50%;
+    border: 2px solid hsl(240, 5%, 91%) 50%;
     margin-left: 50%;
+    margin-right: 8%;
+    font-size: 14px;
   }
 
   .imageContainer {
@@ -154,7 +154,7 @@ h2 {
     background: no-repeat url("/images/illustration-woman-online-desktop.svg");
     background-position: right 20px;
     position: absolute;
-    top: 90px;
+    top: 80px;
     left: 0px;
     padding-right: 150px;
   }
@@ -166,7 +166,7 @@ h2 {
   .boxImg {
     display: block;
     position: absolute;
-    top: 252px;
+    top: 245px;
     left: -100px;
     z-index: 10;
   }

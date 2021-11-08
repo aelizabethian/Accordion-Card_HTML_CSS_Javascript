@@ -12,8 +12,10 @@ questions.forEach((question) => {
       closestArrow.classList.toggle("up");
       if (closestArrow.classList.contains("up")) {
         target.style.fontWeight = "bold";
+        target.style.color = "hsl(238, 29%, 16%)";
       } else {
         target.style.fontWeight = "normal";
+        target.style.color = "hsl(237, 12%, 33%)";
       }
     }
 
