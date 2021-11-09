@@ -31,7 +31,7 @@ h2 {
   max-width: 325px;
   margin: 150px auto;
   margin-bottom: 50px;
-  background: no-repeat top url("/images/bg-pattern-mobile.svg") white;
+  background: no-repeat top url("../images/bg-pattern-mobile.svg") white;
   color: hsl(240, 6%, 50%);
   border: 1px solid white;
   border-radius: 20px;
@@ -53,14 +53,18 @@ h2 {
 }
 
 .question::after {
-  content: url("/images/icon-arrow-down.svg");
+  content: "";
+  background: url("../images/icon-arrow-down.svg") no-repeat;
+  display: inline-block;
+  width: 100px;
+  height: 10px;
   position: absolute;
-  top: 0px;
-  right: 0px;
+  top: 8px;
+  right: -80px;
 }
 
 .question.special::after {
-  content: url("/images/icon-arrow-down.svg");
+  content: url("../images/icon-arrow-down.svg");
 
   position: absolute;
   top: 0px;
