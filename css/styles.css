@@ -60,15 +60,18 @@ h2 {
   height: 10px;
   position: absolute;
   top: 8px;
-  right: -80px;
+  right: -90px;
 }
 
 .question.special::after {
-  content: url("../images/icon-arrow-down.svg");
-
+  content: "";
+  background: url("../images/icon-arrow-down.svg") no-repeat;
+  display: inline-block;
+  width: 100px;
+  height: 10px;
   position: absolute;
-  top: 0px;
-  right: 0px;
+  top: 0;
+  right: 0;
   transform: rotate(180deg);
 }
 .answerGroup {
